@@ -3,7 +3,8 @@ import 'package:swadeshibites/Screens/LoginScreen.dart';
 import 'package:swadeshibites/Screens/RegisterScreen.dart';
 import 'package:swadeshibites/UI%20design/rounded_button.dart';
 
-class loginsignupOptionScreen extends StatefulWidget {
+class loginsignupOptionScreen extends 
+StatefulWidget {
   const loginsignupOptionScreen({Key key}) : super(key: key);
 
   @override
@@ -38,7 +39,7 @@ class _loginsignupOptionScreenState extends State<loginsignupOptionScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 40,
-                      color: Colors.black,
+                      color: Colors.greenAccent[700],
                     ),
                   ),
                   SizedBox(
@@ -51,6 +52,7 @@ class _loginsignupOptionScreenState extends State<loginsignupOptionScreen> {
                   ),
                 ],
               ),
+
               SizedBox(
                 height: 30,
               ),
@@ -62,7 +64,7 @@ class _loginsignupOptionScreenState extends State<loginsignupOptionScreen> {
                     context,
                     MaterialPageRoute(
                       builder: (context) {
-                        return loginScreen();
+                        return LoginScreen();
                       },
                     ),
                   );
